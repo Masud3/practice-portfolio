@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header design starts */
+.text-color{
+    color: orange;
+}
+.link-btn{
+    background-image: linear-gradient(to right, tomato, orange);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.header{
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
+.p-text{
+    color: gray;
+    font-weight: 200;
+}
+h1{
+    font-size: 40px;
+}
+
+/* header design ends */
+
+.dream-big{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* experience section starts */
+.experience-container{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.flexible-experience{
+    box-shadow: 0px 4px 16px gray;
+    width: 100%;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s;
+}
+.flexible-experience:hover{
+    box-shadow: 4px 8px 32px gray;
+}
+.flexible-experience >h2,h3{
+    padding: 10px;
+    font-weight: 700;
+}
+
+#dev-experience{
+    border-left: 5px solid;
+    padding: 15px;
+    border-image: linear-gradient(maroon,tomato);
+    border-image-slice: 1;
+}
+#baby-experience{
+    border-left: 5px solid;
+    padding: 15px;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+/* experience section ends */
+
+/* footer */
+footer p{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+        /* responsive design */
+@media only screen and (max-width: 700px) {
+    .flexible-container, h1,p{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .flexible-container img{
+        width: 100%;
+    }
+    .flexible-experience{
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .header{
+        display: flex;
+        padding: 40px;
+    }
+    .dream-big{
+        display: flex;
+        padding: 40px;
+    }
+    .experience{
+        display: flex;
+    }
+    .flexible-container,h1,p{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .flexible-container img{
+        width: 80%;
+    }
+}
